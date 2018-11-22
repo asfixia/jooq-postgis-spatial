@@ -73,6 +73,12 @@ Search to country containing Lyon
             .where(MBRContains(COUNTRY.GEOM, lyon))
             .fetch();
 
+# INSTALL
+
+Create jar and add the respective configuration to your 'JOOQ configuration' file.
+
+    mvn clean package   
+
 # TODO
 
 - Define spatial functions like ST_Intersects , ST_CoveredBy, ST_Within etc.
